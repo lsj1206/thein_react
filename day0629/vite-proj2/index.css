@@ -11,19 +11,18 @@ header {
   display: flex;
   align-items: center;
   background-color: lightgray;
-  margin: 0;
+  margin: 0 0 24px 0;
   padding: 8px;
   border-bottom: 1px solid gray;
 }
 
 footer {
   display: flex;
-  position: fixed;
-  bottom: 0;
+  position: sticky;
   align-items: center;
   background-color: lightgray;
   width: 100%;
-  margin: 0;
+  margin: 24px 0 0 0;
   padding: 8px;
   border-top: 1px solid gray;
 }
@@ -43,5 +42,23 @@ footer {
 .black {
   background-color: #252525;
   color: #dddddd;
+}
+
+.myform {
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+}
+
+.mylist {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.mytable {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
