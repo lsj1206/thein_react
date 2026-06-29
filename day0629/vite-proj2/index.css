@@ -29,14 +29,19 @@ footer {
 }
 
 .red {
-  color: red;
+  background-color: lightcoral;
 }
 
 .blue {
-  color: blue;
+  background-color: lightblue;
 }
 
-.green {
-  color: green;
+.yellow {
+  background-color: lightgoldenrodyellow;
+}
+
+.black {
+  background-color: #252525;
+  color: #dddddd;
 }
 
