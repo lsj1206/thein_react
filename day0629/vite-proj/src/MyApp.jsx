@@ -1,10 +1,9 @@
-import MyButton from "./MyButton";
+import Section from "./sementic/Section";
 
 function MyApp() {
   return (
     <div>
-      안녕하세요.
-      <MyButton />
+      <Section />
     </div>
   );
 }
