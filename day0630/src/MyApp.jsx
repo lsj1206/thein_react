@@ -1,6 +1,8 @@
 import { useState } from "react";
 import MyUseState from "./sementic/MyUseState";
 import MyButton from "./sementic/MyButton";
+import Counter from "./sementic/Counter";
+import Timer from "./sementic/Timer";
 
 function MyApp() {
   const [count, setCount] = useState(0);
@@ -11,9 +13,17 @@ function MyApp() {
 
   return (
     <div>
-      <MyUseState />
-      <MyButton count={count} onClick={handleClick} />
-      <MyButton count={count} onClick={handleClick} />
+      <Timer />
+      <Counter />
+      <div>
+        <p>useState 모듈</p>
+        <MyUseState />
+      </div>
+      <div>
+        <p>useState 값 공유</p>
+        <MyButton count={count} onClick={handleClick} />
+        <MyButton count={count} onClick={handleClick} />
+      </div>
     </div>
   );
 }
