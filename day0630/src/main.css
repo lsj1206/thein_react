@@ -28,6 +28,11 @@ footer {
   border-top: 1px solid gray;
 }
 
+button {
+  margin: 5px;
+  padding: 6px 12px;
+}
+
 .red {
   color: red;
 }
