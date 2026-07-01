@@ -1,18 +1,16 @@
-import { useEffect, useRef, useState } from "react";
+import "./day0701.css";
+import AccessDom from "./AccessDom";
+import RenderCheck from "./RenderCheck";
+import TrackingState from "./TrackingState";
 
 function Day0701() {
-  const [inputValue, setInputValue] = useState("");
-  const count = useRef(0);
-
-  useEffect(() => {
-    count.current = count.current + 1;
-  });
-
   return (
     <>
-      <p>입력 필드:</p>
-      <input type="text" value={inputValue} onChange={(e) => setInputValue(e.target.value)} />
-      <h1>렌더링 횟수: {count.current}</h1>
+      <RenderCheck />
+      <hr />
+      <AccessDom />
+      <hr />
+      <TrackingState />
     </>
   );
 }
