@@ -5,6 +5,7 @@ import TrackingState from "./TrackingState";
 import MyUseReduser from "./MyUseReduser";
 import WithoutCallback from "./WithoutCallback";
 import WithCallback from "./WithCallback";
+import MyUseMemo from "./MyUseMemo";
 
 function Day0701() {
   return (
@@ -20,6 +21,8 @@ function Day0701() {
       <WithoutCallback />
       <hr />
       <WithCallback />
+      <hr />
+      <MyUseMemo />
     </>
   );
 }
