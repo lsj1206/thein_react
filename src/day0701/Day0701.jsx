@@ -6,8 +6,10 @@ import MyUseReduser from "./MyUseReduser";
 import WithoutCallback from "./WithoutCallback";
 import WithCallback from "./WithCallback";
 import MyUseMemo from "./MyUseMemo";
+import useMyHook from "./useMyHook";
 
-function Day0701() {
+const Day0701 = () => {
+  const [data] = useMyHook("https://jsonplaceholder.typicode.com/todos");
   return (
     <>
       <RenderCheck />
@@ -23,8 +25,17 @@ function Day0701() {
       <WithCallback />
       <hr />
       <MyUseMemo />
+      <hr />
+      {data &&
+        data.map((item) => {
+          return (
+            <p key={item.id}>
+              {item.id} : {item.title}
+            </p>
+          );
+        })}
     </>
   );
-}
+};
 
 export default Day0701;
