@@ -23,6 +23,7 @@ function WithoutCallback() {
   return (
     <div>
       <h2>Without useCallback: </h2>
+      <p>브라우저 콘솔 확인.</p>
       <p>Count 1: {count1}</p>
       <p>Count 2: {count2}</p>
       <Button text="Button 1" onClick={handleClick1} />
