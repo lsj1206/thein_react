@@ -2,6 +2,7 @@ import "./day0701.css";
 import AccessDom from "./AccessDom";
 import RenderCheck from "./RenderCheck";
 import TrackingState from "./TrackingState";
+import MyUseReduser from "./MyUseReduser";
 
 function Day0701() {
   return (
@@ -12,6 +13,7 @@ function Day0701() {
       <hr />
       <TrackingState />
       <hr />
+      <MyUseReduser />
     </>
   );
 }

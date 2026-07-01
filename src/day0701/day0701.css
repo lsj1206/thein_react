@@ -4,3 +4,7 @@ hr {
   padding: 4px;
   border: none;
 }
+
+input {
+  margin: 0 12px 12px 0;
+}
