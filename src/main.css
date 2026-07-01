@@ -4,12 +4,9 @@
 
 body {
   margin: 0;
-  color: #202124;
+  color: #202020;
   background: #f7f8fa;
-  font-family:
-    Arial,
-    "Helvetica Neue",
-    sans-serif;
+  font-family: "Noto Sans", sans-serif;
 }
 
 button,
@@ -31,11 +28,9 @@ button {
 .site-footer {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  gap: 16px;
   background-color: #ffffff;
   border-bottom: 1px solid #d7dce2;
-  padding: 16px 24px;
+  padding: 8px 16px;
 }
 
 .site-header h1 {
@@ -53,21 +48,5 @@ button {
 .day-list {
   width: min(1180px, 100%);
   margin: 0 auto;
-  padding: 32px 24px;
-}
-
-.day-section + .day-section {
-  margin-top: 48px;
-}
-
-@media (max-width: 640px) {
-  .site-header,
-  .site-footer {
-    align-items: flex-start;
-    flex-direction: column;
-  }
-
-  .day-list {
-    padding: 24px 16px;
-  }
+  padding: 8px 16px;
 }

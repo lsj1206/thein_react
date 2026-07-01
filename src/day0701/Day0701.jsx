@@ -11,6 +11,7 @@ function Day0701() {
       <AccessDom />
       <hr />
       <TrackingState />
+      <hr />
     </>
   );
 }
