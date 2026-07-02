@@ -4,7 +4,7 @@ const MyUseMemo = () => {
   const [count, setCount] = useState(0);
   const [todos, setTodos] = useState([]);
 
-  // const calculation = xpensiveCalculation(count);
+  // const calculation = expensiveCalculation(count);
   const calculation = useMemo(() => expensiveCalculation(count), [count]);
 
   const increment = () => {
